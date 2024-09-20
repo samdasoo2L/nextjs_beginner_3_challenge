@@ -1,4 +1,5 @@
 import styles from "../styles/person-detail.module.css";
+import Image from "next/image";
 
 interface IPersonAssetsProps {
   exchange: string;
@@ -38,14 +39,11 @@ export default function PersonDetail({
 }: IPersonDetailProps) {
   return (
     <div className={styles.container}>
-      <img src={squareImage} alt="" />
+      <Image src={squareImage} alt={name} />
       <div>{name}</div>
       <div>{`Networth: ${Math.floor(netWorth / 1000)} Billions`}</div>
-
       <div>{`Country: ${country}`}</div>
-
       <div>{`Industry: ${industries ?? industries[0]}`}</div>
-
       {bio.map((thing, index) => (
         <div className={styles.bio} key={index}>
           {thing}

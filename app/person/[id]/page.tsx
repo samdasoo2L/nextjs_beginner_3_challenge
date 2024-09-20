@@ -1,4 +1,4 @@
-import PersonDetail, { IPersonDetailProps } from "@/components/person-detail";
+import PersonDetail from "@/components/person-detail";
 import styles from "../../../styles/person-page.module.css";
 import { API_PERSON_DETAIL } from "@/app/api";
 

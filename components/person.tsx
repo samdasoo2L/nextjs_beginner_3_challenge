@@ -2,6 +2,7 @@
 
 import { useRouter } from "next/navigation";
 import styles from "../styles/person.module.css";
+import Image from "next/image";
 
 export interface IPersonProps {
   id: string;
@@ -24,7 +25,7 @@ export default function Person({
   };
   return (
     <div className={styles.container} onClick={onClick}>
-      <img src={squareImage} alt="" />
+      <Image src={squareImage} alt={name} />
       <div>{name}</div>
       <span>{`${Math.floor(netWorth / 1000)} Billions`}</span>
       <br />
