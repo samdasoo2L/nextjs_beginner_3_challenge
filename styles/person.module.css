@@ -1,0 +1,27 @@
+.container {
+  width: 150px;
+  min-height: 240px;
+  background-color: gray;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  padding-bottom: 5px;
+  overflow: hidden;
+  border-radius: 5px;
+}
+.container:hover {
+  transform: scale(0.95);
+}
+
+.container img {
+  width: 150px;
+  height: 160px;
+}
+.container div {
+  font-weight: 500;
+  margin-left: 5px;
+  margin-bottom: 5px;
+}
+.container span {
+  margin-left: 5px;
+  font-size: 13px;
+}
